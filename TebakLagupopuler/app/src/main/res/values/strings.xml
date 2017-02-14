@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Quis Tebak Lagu Populer</string>
+    <string name="title_activity_pass">PassActivity</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_guide">GuideActivity</string>
+    <string name="action_settings">setting</string>
+    <string name="multilines">Line1Line1\nLine2Line2</string>
+    <string name="cara">ADA PULUHAN LAGU POPULER  YANG HARUS DI TEBAK,CARA MAIN GAMPANG, CUKUP TEBAK JUDUL LAGU DARI MUSIK YANG DI PUTAR, SETIAP JAWABAN YANG BENAR DAPAT POIN +30, ADA 2 BANTUAN YANG BISA DI PAKAI SATU UNTUK MELIHAT KATA, SATU  LAGI UNTUK MENGHILANGKAN BALOK HURUF, MUSIK BISA DI PUTAR BALIK JIKA TERDENGAR MASIH RAGU, UNTUK MUSIK YANG  MENGGUNAKAN 2 ATAU 3 SUKU KATA SPASINYA TOMBOL YANG KOSONG ,KALAU SUDAH TAMAT PERMAINAN BISA DIPUTAR LAGI</string>
+    <string name="selamat">SELAMAT KAMU SUDAH MENYELESAIKAN TEBAK LAGU POPULER INDONESIA , CONGRATULATION KAMU MEMANG HEBAT</string>
+    <string name="selamat2">SELAMAT KAMU SUDAH MENYELESAIKAN TEBAK PENYANYI/NAMA BAND , CONGRATULATION KAMU MEMANG HEBAT</string>
+
+    <string name="text_next">LANJUT</string>
+    <string name="text_point_bisa_ditambah">POINT BISA DITAMBAH JIKA JUMLAH POINT KURANG DARI 150</string>
+    <string name="text_point_kurang">POINT KURANG KLIK TOMBOL TAMBAH POINT</string>
+    <string name="text_lihat_huruf">LIHAT HURUF POINT -20</string>
+    <string name="text_hapus_balok_huruf">HILANGKAN BALOK HURUF -40</string>
+    <string name="text_emas_kurang">POINT KURANG,SILAKAN KLIK TAMBAH POINT</string>
+    <string name="text_ada_huruf">ADA HURUF  =   </string>
+    <string name="ya">YA</string>
+    <string name="tidak">TIDAK</string>
+
+    <string name="text_tebak_lirik">TEBAK LIRIK</string>
+    <string name="text_tebak_judul">TEBAK JUDUL</string>
+    <string name="text_tebak_penyanyi">TEBAK PEYANYI DAN BAND</string>
+    <string name="text_tebak_pencipta">TEBAK PENCIPTA</string>
+    <string name="text_rank">RANK</string>
+    <string name="text_right_answer">JAWABANYA BENAR SEKALI</string>
+    <string name="text_wrong_answer">JAWABAN ANDA MASIH SALAH</string>
+    <string name="text_next1">LANJUT</string>
+    <string name="text_selesai">SELESAI  : </string>
+    <string name="text_bantuan">Bantuan 1</string>
+    <string name="text_bantuann">Bantuan 2</string>
+
+</resources>

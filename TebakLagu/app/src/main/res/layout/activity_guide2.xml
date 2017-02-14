@@ -1,0 +1,249 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/c"
+        android:padding="5dp"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:lines="1"
+            android:textSize="15dp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:id="@+id/marque"
+            android:text="Tebak lagu minang merupakan game khusus bagi pecinta lagu minang dimana pun berada "
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/send_button_color"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:text="LAH MANYALASAIAN  " />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            app:adSize="BANNER"
+            app:adUnitId="ca-app-pub-4914903732265878/1938916143">
+        </com.google.android.gms.ads.AdView>
+
+        <TextView
+            android:id="@+id/tv_footer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorPrimaryDark"
+            android:visibility="gone"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="1/61" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/frame"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/iv_logo"
+        android:layout_centerHorizontal="true">
+
+        <FrameLayout
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/iv_pan_big"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:id="@+id/iv_pan"
+                android:layout_width="170dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:src="@drawable/kaset_pita" />
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:src="@drawable/kaset_pita" />
+
+            <ImageView
+                android:id="@+id/iv_pan_bar"
+                android:layout_width="35sp"
+                android:layout_height="140sp"
+                android:layout_gravity="right"
+                android:background="@drawable/suling_burned" />
+
+
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/stardvs"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/tv_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:text="12/20" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tebak_minang"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btn_tebak_penyanyi"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:onClick="clearProgress"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:text="@string/text_tebak_penyanyi"
+        android:background="@drawable/corner_avatr"
+        android:visibility="gone"
+        android:textColor="@android:color/white"
+        android:layout_alignRight="@+id/iv_logo"
+        android:layout_alignEnd="@+id/iv_logo"
+        android:layout_alignBottom="@+id/btn_tebak_judul" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:background="@drawable/juara"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:layout_below="@+id/btn_tebak_pencipta"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:background="@drawable/ic_volume_off_black_24dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv_volume_off"
+        android:visibility="gone"
+        android:layout_below="@+id/frame"
+        android:layout_toRightOf="@+id/frame"
+        android:layout_toEndOf="@+id/frame" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:background="@drawable/ic_volume_up_black_24dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv_volume_on"
+        android:visibility="gone"
+        android:layout_below="@+id/frame"
+        android:layout_toRightOf="@+id/frame"
+        android:layout_toEndOf="@+id/frame" />
+
+    <Button
+        android:id="@+id/btn_tebak_pencipta"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:onClick="clearProgress"
+        android:text="RATE"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:background="@drawable/corner_avatr"
+        android:textColor="@android:color/white"
+        android:layout_marginRight="31dp"
+        android:layout_marginEnd="31dp"
+        android:layout_alignBottom="@+id/btn_tebak_lirik"
+        android:layout_alignRight="@+id/iv_logo"
+        android:layout_alignEnd="@+id/iv_logo"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/btn_tebak_lirik"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:onClick="clearProgress"
+        android:text="CARA MAIN"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:background="@drawable/corner_avatr"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_below="@+id/frame"
+        android:layout_alignLeft="@+id/iv_logo"
+        android:layout_alignStart="@+id/iv_logo"
+        android:layout_marginTop="45dp" />
+
+    <Button
+        android:id="@+id/btn_tebak_judul"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:onClick="about"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:text="@string/text_tebak_judul"
+        android:textColor="@android:color/white"
+        android:background="@drawable/corner_avatr"
+        android:layout_marginBottom="12dp"
+        android:layout_above="@+id/btn_tebak_pencipta"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

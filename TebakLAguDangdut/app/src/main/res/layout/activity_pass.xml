@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#6D4C41"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/top_bar" />
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:text="@string/selamat"
+        android:layout_marginLeft="8dp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_marginRight="8dp"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:padding="20dp"
+        android:layout_gravity="center"
+        android:background="@drawable/piala"
+        android:layout_height="300dp"
+        android:id="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/ulang"
+        android:layout_marginLeft="40dp"
+        android:textColor="@android:color/white"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/corner_avatr"
+        android:layout_width="match_parent"
+        android:text="ULANG KEMBALI"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

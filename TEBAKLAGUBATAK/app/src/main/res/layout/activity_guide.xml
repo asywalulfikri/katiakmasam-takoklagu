@@ -1,0 +1,216 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/c"
+        android:padding="5dp"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:lines="1"
+            android:textColor="@android:color/white"
+            android:textSize="15dp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:id="@+id/marque"
+            android:text="Tebak lagu minang merupakan game khusus bagi pecinta lagu minang dimana pun berada "
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:id="@+id/center"
+        android:layout_width="300dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/c"
+        android:layout_height="110dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/tebak_lagu_batak" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:text="LAH MANYALASAIAN  " />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            app:adSize="BANNER"
+            app:adUnitId="ca-app-pub-4914903732265878/9154142946">
+        </com.google.android.gms.ads.AdView>
+
+        <TextView
+            android:id="@+id/tv_footer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorPrimaryDark"
+            android:visibility="gone"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="1/61" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/frame"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/center"
+        android:layout_centerHorizontal="true">
+
+        <FrameLayout
+            android:layout_width="1800dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/iv_pan_big"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:id="@+id/iv_pan"
+                android:layout_width="170dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:src="@drawable/kaset_pita" />
+
+
+            <ImageView
+                android:id="@+id/iv_pan_bar"
+                android:layout_width="35sp"
+                android:layout_height="140sp"
+                android:layout_gravity="right"
+                android:background="@drawable/suling_burned" />
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:src="@drawable/kaset_pita"
+                android:id="@+id/imageView" />
+
+
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/ll_star"
+            android:layout_height="wrap_content"
+            android:background="@drawable/stardvs"
+            android:gravity="center"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/tv_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:text="12/20" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_about"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:onClick="about"
+        android:text="CARO MAIN"
+        android:background="@drawable/button_settings"
+        android:gravity="center"
+        android:layout_alignBaseline="@+id/iv_exit"
+        android:layout_alignBottom="@+id/iv_exit"
+        android:layout_alignRight="@+id/frame"
+        android:layout_alignEnd="@+id/frame" />
+
+    <ImageView
+        android:id="@+id/iv_exit"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@drawable/button_google_play"
+        android:onClick="clearProgress"
+        android:layout_alignTop="@+id/iv_play"
+        android:layout_alignLeft="@+id/frame"
+        android:layout_alignStart="@+id/frame"
+        android:layout_marginTop="58dp" />
+
+    <ImageView
+        android:id="@+id/iv_sound_on"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@drawable/button_music_off"
+        android:onClick="clearProgress"
+        android:visibility="gone"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignLeft="@+id/iv_play"
+        android:layout_alignStart="@+id/iv_play"
+        android:layout_marginBottom="13dp" />
+
+    <ImageView
+        android:id="@+id/iv_sound"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@drawable/button_music_on"
+        android:onClick="clearProgress"
+        android:layout_marginBottom="15dp"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignLeft="@+id/iv_play"
+        android:layout_alignStart="@+id/iv_play" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:onClick="startGame"
+        android:background="@drawable/button_start"
+        android:id="@+id/iv_play"
+        android:layout_below="@+id/frame"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

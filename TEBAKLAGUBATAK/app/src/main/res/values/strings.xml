@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">KUIS TEBAK LAGU BATAK</string>
+    <string name="title_activity_pass">PassActivity</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_guide">GuideActivity</string>
+    <string name="action_settings">setting</string>
+    <string name="multilines">Line1Line1\nLine2Line2</string>
+    <string name="point_kurang">POINT KURANG, KLIK TOMBOL DIATAS</string>
+    <string name="cara">ADA PULUAHAN LAGU POPULER BATAK YANG HARUS DI TEBAK,CARA MAIN GAMPANG, CUKUP TEBAK JUDUL LAGU DARI MUSIK YANG DI PUTAR, SETIAP JAWABAN YANG BENAR DAPAT POIN +50, ADA 2 BANTUAN YANG BISA DI PAKAI SATU UNTUK MELIHAT KATA, SATU  LAGI UNTUK MENGHILANGKAN BALOK HURUF, MUSIK BISA DI PUTAR BALIK JIKA TERDENGAR MASIH RAGU, UNTUK MUSIK YANG  MENGGUNAKAN 2 ATAU 3 SUKU KATA SPASINYA TOMBOL YANG KOSONG ,KALAU SUDAH TAMAT PERMAINAN BISA DIPUTAR LAGI</string>
+    <string name="selamat">SELAMAT KAMU SUDAH MENYELESAIKAN TEBAK LAGU BATAK , CONGRATULATION KAMU MENANG </string>
+
+
+
+    <string name="text_next">LANJUT</string>
+    <string name="text_point_bisa_ditambah">POINT BISA DITAMBAH JIKA JUMLAH POINT KURANG DARI 150</string>
+    <string name="text_point_kurang">POINT KURANG KLIK TOMBOL TAMBAH POINT</string>
+    <string name="text_lihat_huruf">LIHAT HURUF POINT -20</string>
+    <string name="text_hapus_balok_huruf">HILANGKAN BALOK HURUF -20</string>
+    <string name="text_emas_kurang">POINT KURANG,SILAKAN KLIK TAMBAH POINT</string>
+    <string name="text_ada_huruf">ADA HURUF  =   </string>
+    <string name="text_wrong_answer">Jawaban anda masih salah</string>
+    <string name="text_selesai">Selesai</string>
+    <string name="ya">YA</string>
+    <string name="tidak">TIDAK</string>
+    <string name="text_bantuan">Bantuan 1</string>
+    <string name="text_bantuann">Bantuan 2</string>
+    <string name="jawabnya">Jawabanya Benar</string>
+
+
+
+</resources>

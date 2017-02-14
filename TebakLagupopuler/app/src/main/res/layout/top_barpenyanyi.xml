@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:background="#7C4DFF"
+    android:layout_height="wrap_content">
+
+    <ImageButton
+        android:id="@+id/btn_bar_back"
+        android:layout_width="65dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:background="@drawable/back_button_icon" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:adSize="BANNER"
+        android:visibility="visible"
+        app:adUnitId="ca-app-pub-4914903732265878/7601843344">
+    </com.google.android.gms.ads.AdView>
+
+
+
+
+</RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>

@@ -1,0 +1,159 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/anakw"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+
+
+    <ImageView
+        android:id="@+id/center"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/icon_anak" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/send_button_color"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:text="LAH MANYALASAIAN  " />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            app:adSize="BANNER"
+            app:adUnitId="ca-app-pub-4914903732265878/1938916143">
+        </com.google.android.gms.ads.AdView>
+
+        <TextView
+            android:id="@+id/tv_footer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorPrimaryDark"
+            android:visibility="gone"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="1/61" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/frame"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/center"
+        android:layout_centerHorizontal="true">
+
+        <FrameLayout
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/iv_pan_big"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:id="@+id/iv_pan"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_gravity="center"
+                android:src="@drawable/piring_2" />
+
+            <ImageView
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_gravity="center"
+                android:src="@drawable/piring_2" />
+
+            <ImageButton
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_gravity="center"
+                android:onClick="startGame"
+                android:background="@drawable/ic_play_" />
+
+            <ImageView
+                android:id="@+id/iv_pan_bar"
+                android:layout_width="35sp"
+                android:layout_height="140sp"
+                android:layout_gravity="right"
+                android:background="@drawable/index_pin" />
+
+
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/stardvs"
+            android:gravity="center"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/tv_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:text="12/20" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/vv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="clearProgress"
+        android:text="KELUAR"
+        android:layout_below="@+id/frame"
+        android:layout_alignRight="@+id/frame"
+        android:layout_alignEnd="@+id/frame"
+        android:layout_marginRight="17dp"
+        android:layout_marginEnd="17dp" />
+
+    <Button
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="about"
+        android:text="CARA MAIN"
+        android:layout_below="@+id/frame"
+        android:layout_alignLeft="@+id/frame"
+        android:layout_alignStart="@+id/frame"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp" />
+
+
+</RelativeLayout>
